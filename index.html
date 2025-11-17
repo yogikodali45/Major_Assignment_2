@@ -93,13 +93,13 @@
       // 1) Load the TopoJSON
       let topo;
       try {
-        topo = await d3.json("data/towns.topojson");
+        topo = await d3.json("towns.topojson");
       } catch (e) {
         console.error(e);
         mapASection.insertAdjacentHTML(
           "beforeend",
           `<p style="color:#b91c1c">
-            Could not load <code>data/towns.topojson</code>. Check the file path/name.
+            Could not load <code>towns.topojson</code>. Check the file path/name.
           </p>`
         );
         return;
@@ -204,13 +204,13 @@
 
       let topo;
       try {
-        topo = await d3.json("data/towns.topojson");
+        topo = await d3.json("towns.topojson");
       } catch (e) {
         console.error(e);
         section.insertAdjacentHTML(
           "beforeend",
           `<p style="color:#b91c1c">
-            Could not load <code>data/towns.topojson</code> for MAP B.
+            Could not load <code>towns.topojson</code> for MAP B.
           </p>`
         );
         return;
@@ -297,13 +297,13 @@
       // --- 1) Load towns TopoJSON ---
       let topo;
       try {
-        topo = await d3.json("data/towns.topojson");
+        topo = await d3.json("towns.topojson");
       } catch (e) {
         console.error(e);
         section.insertAdjacentHTML(
           "beforeend",
           `<p style="color:#b91c1c">
-            Could not load <code>data/towns.topojson</code> for MAP C.
+            Could not load <code>towns.topojson</code> for MAP C.
           </p>`
         );
         return;
@@ -359,13 +359,13 @@
       // --- 2) Load Gini CSV ---
       let raw;
       try {
-        raw = await d3.csv("data/gini_index.csv");
+        raw = await d3.csv("gini_index.csv");
       } catch (e) {
         console.error(e);
         section.insertAdjacentHTML(
           "beforeend",
           `<p style="color:#b91c1c">
-            Could not load <code>data/gini_index.csv</code>.
+            Could not load <code>gini_index.csv</code>.
           </p>`
         );
         drawBasemap();
@@ -583,3 +583,4 @@
   </script>
 </body>
 </html>
+
